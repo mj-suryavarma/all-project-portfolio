@@ -1,0 +1,107 @@
+.header_bar{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     padding: 0% 5%;
+     /* padding: 20px; */
+     border: 1px 1px 10px black; 
+     height: max-content;
+     background-color:black;
+     color: whitesmoke;
+    }
+.logo{
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.nav-item{
+    margin: 10px;
+    padding: 10px;
+}
+
+.nav-link{
+    font-size: 1.2rem;
+    font-weight:700;
+   color: whitesmoke;
+
+}
+
+.bar_icon{
+    font-size: 1.6rem;
+    display: none;
+    cursor: pointer;
+}
+
+.bar_icon{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+   }
+  .menu_bar_container{
+    display: none;
+    position: fixed;
+     top: 0px;
+     right: 0px;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.637);
+     z-index: 1;
+    
+  } 
+
+ .menu_bar{
+   display: none;
+    position: fixed;
+     top: 0px;
+     right: 0px;
+     width: 50%;
+     height: 100%;
+     z-index: 2;
+ } 
+ .menu{
+     display: flex;
+     flex-direction: column;
+     text-align: center;    
+     color: black;
+ } 
+
+ .x_bar{
+     position: absolute;
+     font-size: 2rem;
+     font-weight: 600;
+     top: 10;
+     right:0;
+     margin: 10px;
+     padding: 10px;
+     cursor: pointer;
+     color: black;
+ }
+ .menu_link{
+     margin-top: 20px;
+     padding: 10px;
+     color: black;
+ }
+ .nav-link:hover{
+    color: green;
+
+ }
+.menu_link:hover{
+    color: green;
+}
+ @media screen and (max-width:700px) {
+    .nav_container{
+        display: none;
+    }
+   
+    .menu_bar{
+        display: block;
+    }
+     .menu_bar_container{
+         display: block;
+     }
+   .bar_icon{
+       display: block;
+   }
+
+}
